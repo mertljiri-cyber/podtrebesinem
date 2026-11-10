@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2eb">
+  <meta name="description" content="Osobní stránka Jirky Pod Třebešínem.">
+  <title>Jirka · Pod Třebešínem</title>
+  <style>
+    :root { color-scheme: light; --ink:#202d26; --muted:#667269; --paper:#f5f2eb; --line:#cdd3c8; --red:#a2443f; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial, sans-serif; }
+    a { color:inherit; }
+    .page { max-width:1440px; min-height:100vh; margin:auto; padding:0 6%; }
+    header { height:100px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); }
+    .brand { text-decoration:none; font-family:Georgia, serif; font-size:1.3rem; letter-spacing:-.03em; }
+    .brand span { color:var(--red); }
+    .nav-link { font-size:.75rem; font-weight:bold; text-transform:uppercase; letter-spacing:.14em; text-decoration:none; }
+    .nav-link:hover, .nav-link:focus-visible { color:var(--red); }
+    main { display:grid; grid-template-columns:1.15fr .85fr; align-items:center; gap:8%; padding:8rem 0 7rem; }
+    .eyebrow { display:flex; align-items:center; gap:.8rem; color:var(--red); font-size:.72rem; font-weight:bold; letter-spacing:.18em; text-transform:uppercase; }
+    .eyebrow:before { content:""; width:2rem; height:1px; background:currentColor; }
+    h1 { font-family:Georgia, 'Times New Roman', serif; font-size:clamp(4rem, 8.7vw, 8.5rem); font-weight:normal; letter-spacing:-.065em; line-height:.96; margin:2rem 0; }
+    h1 em { color:var(--red); font-weight:normal; }
+    .intro { max-width:31rem; font-size:clamp(1.05rem, 1.5vw, 1.3rem); line-height:1.7; color:var(--muted); }
+    .button { display:inline-flex; gap:2.5rem; align-items:center; margin-top:2rem; padding:1.1rem 1.3rem; background:var(--ink); color:white; font-size:.8rem; font-weight:bold; letter-spacing:.03em; text-decoration:none; transition:background .2s; }
+    .button:hover, .button:focus-visible { background:var(--red); }
+    .art { min-height:470px; aspect-ratio:4/5; position:relative; overflow:hidden; background:#dce3d7; }
+    .art svg { width:100%; height:100%; position:absolute; inset:0; }
+    .art-label { position:absolute; bottom:1.5rem; left:1.5rem; font-size:.68rem; letter-spacing:.15em; text-transform:uppercase; color:#536256; }
+    .about { display:grid; grid-template-columns:1fr 2fr; gap:3rem; border-top:1px solid var(--line); padding:3rem 0 5rem; }
+    .section-label { color:var(--red); font-size:.72rem; font-weight:bold; letter-spacing:.15em; text-transform:uppercase; }
+    .about p { margin:0; max-width:43rem; font-family:Georgia, serif; font-size:clamp(1.45rem,2.5vw,2.3rem); line-height:1.4; }
+    footer { border-top:1px solid var(--line); display:flex; justify-content:space-between; gap:1rem; padding:1.5rem 0 2rem; font-size:.75rem; color:var(--muted); }
+    @media(max-width:700px) { header { height:76px; } main { grid-template-columns:1fr; gap:3rem; padding:5rem 0; } .art { min-height:340px; max-height:500px; } .about { grid-template-columns:1fr; gap:1.5rem; } }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .button { transition:none; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <a class="brand" href="#uvod">Pod <span>Třebešínem.</span></a>
+      <a class="nav-link" href="#o-mne">O mně ↓</a>
+    </header>
+    <main id="uvod">
+      <div>
+        <div class="eyebrow">Osobní stránka</div>
+        <h1>Vítejte<br>pod <em>Třebešínem.</em></h1>
+        <p class="intro">Jsem Jirka. Vítejte na mém malém prostoru na internetu pro osobní představení, nové nápady a spojení s lidmi.</p>
+        <a class="button" href="https://www.linkedin.com/in/mertljiri/" target="_blank" rel="noopener noreferrer">Najdete mě na LinkedIn <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="art" aria-hidden="true">
+        <svg viewBox="0 0 500 625" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="266" cy="270" r="165" fill="#eef0e5"/>
+          <path d="M90 535 C205 465 233 352 260 240 M255 274 C208 216 175 170 153 99 M249 304 C312 262 350 207 367 144 M218 374 C169 344 124 316 78 312 M278 226 C305 189 320 142 321 92" fill="none" stroke="#526b58" stroke-width="7" stroke-linecap="round"/>
+          <g fill="#78917a"><ellipse cx="169" cy="177" rx="19" ry="48" transform="rotate(-43 169 177)"/><ellipse cx="214" cy="239" rx="17" ry="42" transform="rotate(39 214 239)"/><ellipse cx="337" cy="196" rx="19" ry="46" transform="rotate(48 337 196)"/><ellipse cx="119" cy="318" rx="16" ry="40" transform="rotate(-65 119 318)"/><ellipse cx="313" cy="146" rx="17" ry="42" transform="rotate(30 313 146)"/></g>
+          <g fill="#aa4d49"><circle cx="153" cy="119" r="17"/><circle cx="178" cy="129" r="16"/><circle cx="362" cy="159" r="17"/><circle cx="387" cy="172" r="16"/><circle cx="86" cy="311" r="16"/><circle cx="107" cy="331" r="15"/></g>
+        </svg>
+        <span class="art-label">Pod Třebešínem · osobní prostor</span>
+      </div>
+    </main>
+    <section class="about" id="o-mne">
+      <div class="section-label">01 / O mně</div>
+      <p>Vítejte na mém osobním místě na webu. Pokud se chcete propojit, budu rád, když mě navštívíte na LinkedIn.</p>
+    </section>
+    <footer><span>© 2026 Pod Třebešínem</span><span>Vytvořeno s klidem.</span></footer>
+  </div>
+</body>
+</html>
